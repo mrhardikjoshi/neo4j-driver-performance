@@ -5,111 +5,110 @@ ENV['SEABOLT_LIB'].size = 61
 ==================================================
 for loop_count 10000
 While write_transaction multiple session
-#<Benchmark::Tms:0x00007f84828b7dc0 @label="", @real=5.435622000135481, @cstime=0.0, @cutime=0.0, @stime=0.45594100000000004, @utime=2.139254, @total=2.5951950000000004>
-#<Benchmark::Tms:0x00007f84529d47d8 @label="", @real=5.277552000014111, @cstime=0.0, @cutime=0.0, @stime=0.4346880000000001, @utime=2.0624599999999997, @total=2.4971479999999997>
-#<Benchmark::Tms:0x00007f8452ab5670 @label="", @real=5.153747000033036, @cstime=0.0, @cutime=0.0, @stime=0.42908100000000005, @utime=2.018783, @total=2.447864>
+#<Benchmark::Tms:0x00007fc05787a6f8 @label="", @real=49.78199200006202, @cstime=0.0, @cutime=0.0, @stime=0.534797, @utime=2.908587, @total=3.443384>
+#<Benchmark::Tms:0x00007fc05785b1e0 @label="", @real=46.837194999912754, @cstime=0.0, @cutime=0.0, @stime=0.4893790000000001, @utime=2.60857, @total=3.097949>
+#<Benchmark::Tms:0x00007fc057913920 @label="", @real=46.732184999855235, @cstime=0.0, @cutime=0.0, @stime=0.486758, @utime=2.606545999999999, @total=3.093303999999999>
 ==================================================
 for loop_count 5
 While read_transaction multiple session
-#<Benchmark::Tms:0x00007f8452975760 @label="", @real=92.96705799992196, @cstime=0.0, @cutime=0.0, @stime=0.21420600000000012, @utime=92.654187, @total=92.868393>
-#<Benchmark::Tms:0x00007f8452ad4228 @label="", @real=91.71293999999762, @cstime=0.0, @cutime=0.0, @stime=0.21184400000000014, @utime=91.408282, @total=91.620126>
-#<Benchmark::Tms:0x00007f84529bd538 @label="", @real=90.16046500019729, @cstime=0.0, @cutime=0.0, @stime=0.16120500000000026, @utime=89.94382800000002, @total=90.10503300000002>
+#<Benchmark::Tms:0x00007fc056a906c8 @label="", @real=0.723824999993667, @cstime=0.0, @cutime=0.0, @stime=0.0015570000000000306, @utime=0.7099890000000002, @total=0.7115460000000002>
+#<Benchmark::Tms:0x00007fc0570a8f88 @label="", @real=0.718921999912709, @cstime=0.0, @cutime=0.0, @stime=0.0021119999999998917, @utime=0.7071999999999985, @total=0.7093119999999984>
+#<Benchmark::Tms:0x00007fc0578eb2b8 @label="", @real=0.7342340000905097, @cstime=0.0, @cutime=0.0, @stime=0.002118999999999982, @utime=0.7187820000000009, @total=0.7209010000000009>
 ==================================================
 for loop_count 10000
 While write_transaction single session
-#<Benchmark::Tms:0x00007f84375c10d0 @label="", @real=2.252159000141546, @cstime=0.0, @cutime=0.0, @stime=0.15964299999999998, @utime=1.2981829999999945, @total=1.4578259999999945>
-#<Benchmark::Tms:0x00007f844090ba70 @label="", @real=2.176996999885887, @cstime=0.0, @cutime=0.0, @stime=0.15209099999999998, @utime=1.2344380000000115, @total=1.3865290000000114>
-#<Benchmark::Tms:0x00007f8437491868 @label="", @real=2.3826659999322146, @cstime=0.0, @cutime=0.0, @stime=0.1563089999999998, @utime=1.3584169999999745, @total=1.5147259999999743>
+#<Benchmark::Tms:0x00007fc043539548 @label="", @real=2.1186410000082105, @cstime=0.0, @cutime=0.0, @stime=0.14885900000000007, @utime=1.2333660000000002, @total=1.3822250000000003>
+#<Benchmark::Tms:0x00007fc04333b160 @label="", @real=2.0503460001200438, @cstime=0.0, @cutime=0.0, @stime=0.14361999999999986, @utime=1.1800870000000003, @total=1.3237070000000002>
+#<Benchmark::Tms:0x00007fc042da22a8 @label="", @real=2.071474000113085, @cstime=0.0, @cutime=0.0, @stime=0.13305599999999984, @utime=1.2317219999999995, @total=1.3647779999999994>
 ==================================================
 for loop_count 5
 While read_transaction single session
-#<Benchmark::Tms:0x00007f8472ab29a0 @label="", @real=97.17564999987371, @cstime=0.0, @cutime=0.0, @stime=0.43801000000000023, @utime=96.598543, @total=97.03655300000001>
-#<Benchmark::Tms:0x00007f8437369c88 @label="", @real=95.83975600008853, @cstime=0.0, @cutime=0.0, @stime=0.3924380000000003, @utime=95.34926300000001, @total=95.741701>
-#<Benchmark::Tms:0x00007f84829264a0 @label="", @real=96.58257799991407, @cstime=0.0, @cutime=0.0, @stime=0.34596099999999996, @utime=96.13410100000004, @total=96.48006200000005>
+#<Benchmark::Tms:0x00007fc0450b14d8 @label="", @real=0.7650399999693036, @cstime=0.0, @cutime=0.0, @stime=0.0028160000000001517, @utime=0.7535559999999997, @total=0.7563719999999998>
+#<Benchmark::Tms:0x00007fc0451db570 @label="", @real=0.7312500001862645, @cstime=0.0, @cutime=0.0, @stime=0.002898000000000067, @utime=0.7197030000000009, @total=0.7226010000000009>
+#<Benchmark::Tms:0x00007fc043238268 @label="", @real=0.7539609998930246, @cstime=0.0, @cutime=0.0, @stime=0.0032810000000003114, @utime=0.7417150000000028, @total=0.7449960000000031>
 ==================================================
 for loop_count 50000
 While write_transaction multiple session
-#<Benchmark::Tms:0x00007f8436d1a008 @label="", @real=26.588747000088915, @cstime=0.0, @cutime=0.0, @stime=2.1926769999999998, @utime=10.408587000000011, @total=12.601264000000011>
-#<Benchmark::Tms:0x00007f8472e2b050 @label="", @real=26.153699999907985, @cstime=0.0, @cutime=0.0, @stime=2.1851920000000007, @utime=10.348415000000045, @total=12.533607000000046>
-#<Benchmark::Tms:0x00007f8472f8be90 @label="", @real=26.749826000072062, @cstime=0.0, @cutime=0.0, @stime=2.212384, @utime=10.58359100000007, @total=12.79597500000007>
+#<Benchmark::Tms:0x00007fc0576d0500 @label="", @real=232.97022100002505, @cstime=0.0, @cutime=0.0, @stime=2.445005, @utime=13.068189, @total=15.513194>
+#<Benchmark::Tms:0x00007fc043122a90 @label="", @real=232.41604499984533, @cstime=0.0, @cutime=0.0, @stime=2.419256, @utime=12.895449000000003, @total=15.314705000000004>
+#<Benchmark::Tms:0x00007fc057203810 @label="", @real=231.12570800003596, @cstime=0.0, @cutime=0.0, @stime=2.4237349999999998, @utime=12.895352000000003, @total=15.319087000000003>
 ==================================================
 for loop_count 5
 While read_transaction multiple session
-#<Benchmark::Tms:0x00007f8472ed8d18 @label="", @real=109.50245000002906, @cstime=0.0, @cutime=0.0, @stime=0.4265060000000016, @utime=108.87465399999996, @total=109.30115999999997>
-#<Benchmark::Tms:0x00007f8436e8b7c0 @label="", @real=106.3837760000024, @cstime=0.0, @cutime=0.0, @stime=0.3241399999999999, @utime=105.96490100000005, @total=106.28904100000005>
-#<Benchmark::Tms:0x00007f8482ae63f8 @label="", @real=104.05248599988408, @cstime=0.0, @cutime=0.0, @stime=0.23164599999999957, @utime=103.76801499999999, @total=103.99966099999999>
+#<Benchmark::Tms:0x00007fc042e33690 @label="", @real=3.4456220001447946, @cstime=0.0, @cutime=0.0, @stime=0.009129999999998972, @utime=3.4222499999999982, @total=3.431379999999997>
+#<Benchmark::Tms:0x00007fc057be0fb8 @label="", @real=3.4771779999136925, @cstime=0.0, @cutime=0.0, @stime=0.008747999999998868, @utime=3.457677000000004, @total=3.4664250000000028>
+#<Benchmark::Tms:0x00007fc042a63998 @label="", @real=3.4429780000355095, @cstime=0.0, @cutime=0.0, @stime=0.0074039999999993, @utime=3.424666000000002, @total=3.4320700000000013>
 ==================================================
 for loop_count 50000
 While write_transaction single session
-#<Benchmark::Tms:0x00007f84175a33c0 @label="", @real=11.320004999870434, @cstime=0.0, @cutime=0.0, @stime=0.7888989999999989, @utime=6.518423999999982, @total=7.307322999999981>
-#<Benchmark::Tms:0x00007f8452e56db0 @label="", @real=10.603313999949023, @cstime=0.0, @cutime=0.0, @stime=0.7167290000000008, @utime=6.2886459999999715, @total=7.005374999999972>
-#<Benchmark::Tms:0x00007f8425061bd8 @label="", @real=10.741345999995247, @cstime=0.0, @cutime=0.0, @stime=0.7155159999999992, @utime=6.333155000000033, @total=7.0486710000000325>
+#<Benchmark::Tms:0x00007fc056f4aab0 @label="", @real=9.945938999997452, @cstime=0.0, @cutime=0.0, @stime=0.6934069999999988, @utime=5.855048000000011, @total=6.5484550000000095>
+#<Benchmark::Tms:0x00007fc031479d90 @label="", @real=10.15679799998179, @cstime=0.0, @cutime=0.0, @stime=0.6666239999999988, @utime=6.16931000000001, @total=6.835934000000009>
+#<Benchmark::Tms:0x00007fc060ecb878 @label="", @real=9.778732999926433, @cstime=0.0, @cutime=0.0, @stime=0.6586820000000007, @utime=5.809956, @total=6.468638>
 ==================================================
 for loop_count 5
 While read_transaction single session
-#<Benchmark::Tms:0x00007f8412c69010 @label="", @real=160.82734400010668, @cstime=0.0, @cutime=0.0, @stime=0.5616850000000007, @utime=118.00370099999998, @total=118.56538599999998>
-#<Benchmark::Tms:0x00007f843715e588 @label="", @real=121.93204500013962, @cstime=0.0, @cutime=0.0, @stime=0.5726169999999993, @utime=121.16716599999995, @total=121.73978299999995>
-#<Benchmark::Tms:0x00007f84277813f8 @label="", @real=122.21741499984637, @cstime=0.0, @cutime=0.0, @stime=0.5532310000000003, @utime=121.51388400000019, @total=122.06711500000019>
+#<Benchmark::Tms:0x00007fc057ad8c38 @label="", @real=4.021930000046268, @cstime=0.0, @cutime=0.0, @stime=0.07688600000000001, @utime=3.933269999999993, @total=4.010155999999993>
+#<Benchmark::Tms:0x00007fc057339950 @label="", @real=3.4015029999427497, @cstime=0.0, @cutime=0.0, @stime=0.006622000000000128, @utime=3.3853169999999864, @total=3.3919389999999865>
+#<Benchmark::Tms:0x00007fc0578f8a58 @label="", @real=3.3665980000514537, @cstime=0.0, @cutime=0.0, @stime=0.006664999999999921, @utime=3.3502620000000007, @total=3.3569270000000007>
 
 
 
 
 
+=========================2. JRuby with Seabolt=========================
 
-=========================2. JRuby without Seabolt=========================
-
-neo4j-driver version: 1.7.2.beta.3
+neo4j-driver version: 0.1.4
 Ruby version: 2.5.3
-ENV['SEABOLT_LIB'].size = 0
+ENV['SEABOLT_LIB'].size = 61
 
 ==================================================
 for loop_count 10000
 While write_transaction multiple session
-#<Benchmark::Tms:0x9a2ec9b @stime=1.4, @label="", @cstime=0.0, @real=8.257491825032048, @total=12.440000000000001, @cutime=0.0, @utime=11.040000000000001>
-#<Benchmark::Tms:0x6d171ce0 @stime=1.41, @label="", @cstime=0.0, @real=8.259094265988097, @total=11.770000000000001, @cutime=0.0, @utime=10.360000000000001>
-#<Benchmark::Tms:0x6d171ce0 @stime=1.4100000000000001, @label="", @cstime=0.0, @real=8.32114997599274, @total=11.98, @cutime=0.0, @utime=10.57>
+#<Benchmark::Tms:0xbff34c6 @stime=0.8200000000000001, @label="", @cstime=0.0, @real=53.31337849795818, @total=14.489999999999998, @cutime=0.0, @utime=13.669999999999998>
+#<Benchmark::Tms:0x3f053c80 @stime=0.52, @label="", @cstime=0.0, @real=48.56509116990492, @total=3.5800000000000023, @cutime=0.0, @utime=3.0600000000000023>
+#<Benchmark::Tms:0x3a94964 @stime=0.52, @label="", @cstime=0.0, @real=48.49579369206913, @total=3.6600000000000006, @cutime=0.0, @utime=3.1400000000000006>
 ==================================================
 for loop_count 5
 While read_transaction multiple session
-#<Benchmark::Tms:0x2d5f7182 @stime=0.40000000000000013, @label="", @cstime=0.0, @real=4.714878474944271, @total=10.600000000000003, @cutime=0.0, @utime=10.200000000000003>
-#<Benchmark::Tms:0x540dbda9 @stime=0.43999999999999995, @label="", @cstime=0.0, @real=5.363815914024599, @total=12.37, @cutime=0.0, @utime=11.93>
-#<Benchmark::Tms:0x1be59f28 @stime=0.48999999999999977, @label="", @cstime=0.0, @real=6.039509171037935, @total=13.139999999999999, @cutime=0.0, @utime=12.649999999999999>
+#<Benchmark::Tms:0x410ae9a3 @stime=0.010000000000000231, @label="", @cstime=0.0, @real=0.6414152949582785, @total=1.69, @cutime=0.0, @utime=1.6799999999999997>
+#<Benchmark::Tms:0x7e242b4d @stime=0.009999999999999787, @label="", @cstime=0.0, @real=0.4165963690029457, @total=0.5300000000000029, @cutime=0.0, @utime=0.5200000000000031>
+#<Benchmark::Tms:0x1d1f7216 @stime=0.0, @label="", @cstime=0.0, @real=0.4054829330416396, @total=0.45000000000000284, @cutime=0.0, @utime=0.45000000000000284>
 ==================================================
 for loop_count 10000
 While write_transaction single session
-#<Benchmark::Tms:0x58a4a74d @stime=0.10000000000000009, @label="", @cstime=0.0, @real=0.29039754602126777, @total=1.2099999999999995, @cutime=0.0, @utime=1.1099999999999994>
-#<Benchmark::Tms:0x421a4ee1 @stime=0.10000000000000009, @label="", @cstime=0.0, @real=0.26235813996754587, @total=1.119999999999996, @cutime=0.0, @utime=1.019999999999996>
-#<Benchmark::Tms:0x528f8f8b @stime=0.11999999999999966, @label="", @cstime=0.0, @real=0.3133882569381967, @total=1.3500000000000036, @cutime=0.0, @utime=1.230000000000004>
+#<Benchmark::Tms:0x756cf158 @stime=0.20000000000000018, @label="", @cstime=0.0, @real=1.7595334979705513, @total=1.8499999999999988, @cutime=0.0, @utime=1.6499999999999986>
+#<Benchmark::Tms:0x52500920 @stime=0.22999999999999998, @label="", @cstime=0.0, @real=1.692620335961692, @total=1.6100000000000025, @cutime=0.0, @utime=1.3800000000000026>
+#<Benchmark::Tms:0x70dd7e15 @stime=0.22999999999999998, @label="", @cstime=0.0, @real=1.6719646960264072, @total=1.3600000000000025, @cutime=0.0, @utime=1.1300000000000026>
 ==================================================
 for loop_count 5
 While read_transaction single session
-#<Benchmark::Tms:0x236134a1 @stime=0.16999999999999993, @label="", @cstime=0.0, @real=4.525802270974964, @total=8.359999999999998, @cutime=0.0, @utime=8.189999999999998>
-#<Benchmark::Tms:0x69d6a7cd @stime=0.17999999999999972, @label="", @cstime=0.0, @real=4.9418979190522805, @total=9.009999999999998, @cutime=0.0, @utime=8.829999999999998>
-#<Benchmark::Tms:0x2c708440 @stime=0.2200000000000002, @label="", @cstime=0.0, @real=5.714834312093444, @total=10.390000000000002, @cutime=0.0, @utime=10.170000000000002>
+#<Benchmark::Tms:0x2c9399a4 @stime=0.020000000000000018, @label="", @cstime=0.0, @real=0.4513998490292579, @total=0.7300000000000009, @cutime=0.0, @utime=0.7100000000000009>
+#<Benchmark::Tms:0x53ab0286 @stime=0.08999999999999986, @label="", @cstime=0.0, @real=0.48361330095212907, @total=0.7999999999999936, @cutime=0.0, @utime=0.7099999999999937>
+#<Benchmark::Tms:0x1c98290c @stime=0.0, @label="", @cstime=0.0, @real=0.45262764708604664, @total=0.6799999999999997, @cutime=0.0, @utime=0.6799999999999997>
 ==================================================
 for loop_count 50000
 While write_transaction multiple session
-#<Benchmark::Tms:0x640dc4c6 @stime=5.7, @label="", @cstime=0.0, @real=30.646198387024924, @total=16.45, @cutime=0.0, @utime=10.75>
-#<Benchmark::Tms:0x4647881c @stime=6.220000000000001, @label="", @cstime=0.0, @real=33.89841521997005, @total=18.29, @cutime=0.0, @utime=12.07>
-#<Benchmark::Tms:0x7bb35cc6 @stime=5.6800000000000015, @label="", @cstime=0.0, @real=30.71514818992, @total=17.0, @cutime=0.0, @utime=11.32>
+#<Benchmark::Tms:0x3a43d133 @stime=2.8100000000000005, @label="", @cstime=0.0, @real=244.1411652120296, @total=18.060000000000002, @cutime=0.0, @utime=15.25>
+#<Benchmark::Tms:0x1e54cb33 @stime=2.9299999999999997, @label="", @cstime=0.0, @real=251.30284247803502, @total=19.93999999999999, @cutime=0.0, @utime=17.00999999999999>
+#<Benchmark::Tms:0x7efe7b87 @stime=2.8200000000000003, @label="", @cstime=0.0, @real=249.52446572599, @total=18.32, @cutime=0.0, @utime=15.5>
 ==================================================
 for loop_count 5
 While read_transaction multiple session
-#<Benchmark::Tms:0x33b082c5 @stime=0.1899999999999995, @label="", @cstime=0.0, @real=5.500216712011024, @total=10.050000000000006, @cutime=0.0, @utime=9.860000000000007>
-#<Benchmark::Tms:0xf3fcd59 @stime=0.16000000000000014, @label="", @cstime=0.0, @real=5.194171903072856, @total=9.66, @cutime=0.0, @utime=9.5>
-#<Benchmark::Tms:0x33b082c5 @stime=0.1899999999999995, @label="", @cstime=0.0, @real=6.280640764045529, @total=11.409999999999998, @cutime=0.0, @utime=11.219999999999999>
+#<Benchmark::Tms:0x19382338 @stime=0.009999999999999787, @label="", @cstime=0.0, @real=1.9169686909299344, @total=1.9399999999999924, @cutime=0.0, @utime=1.9299999999999926>
+#<Benchmark::Tms:0x20134094 @stime=0.009999999999999787, @label="", @cstime=0.0, @real=1.9213000419549644, @total=1.9499999999999975, @cutime=0.0, @utime=1.9399999999999977>
+#<Benchmark::Tms:0x3e104d4b @stime=0.019999999999999574, @label="", @cstime=0.0, @real=1.9315801250049844, @total=1.9699999999999882, @cutime=0.0, @utime=1.9499999999999886>
 ==================================================
 for loop_count 50000
 While write_transaction single session
-#<Benchmark::Tms:0x26d820eb @stime=0.33000000000000007, @label="", @cstime=0.0, @real=0.922677424037829, @total=1.089999999999991, @cutime=0.0, @utime=0.7599999999999909>
-#<Benchmark::Tms:0x79b08632 @stime=0.3800000000000008, @label="", @cstime=0.0, @real=1.0229011210612953, @total=1.2400000000000002, @cutime=0.0, @utime=0.8599999999999994>
-#<Benchmark::Tms:0x26d820eb @stime=0.3200000000000003, @label="", @cstime=0.0, @real=0.9053838509134948, @total=0.990000000000002, @cutime=0.0, @utime=0.6700000000000017>
+#<Benchmark::Tms:0x31ceba99 @stime=1.0199999999999996, @label="", @cstime=0.0, @real=9.933838796103373, @total=9.849999999999998, @cutime=0.0, @utime=8.829999999999998>
+#<Benchmark::Tms:0x6a937336 @stime=0.9700000000000006, @label="", @cstime=0.0, @real=9.55571659898851, @total=13.310000000000004, @cutime=0.0, @utime=12.340000000000003>
+#<Benchmark::Tms:0x25b52284 @stime=0.7000000000000011, @label="", @cstime=0.0, @real=8.312734848004766, @total=6.610000000000012, @cutime=0.0, @utime=5.910000000000011>
 ==================================================
 for loop_count 5
 While read_transaction single session
-#<Benchmark::Tms:0x26d820eb @stime=0.33000000000000007, @label="", @cstime=0.0, @real=0.922677424037829, @total=1.089999999999991, @cutime=0.0, @utime=0.7599999999999909>
-#<Benchmark::Tms:0x4a05d8ae @stime=0.16000000000000014, @label="", @cstime=0.0, @real=5.286761860013939, @total=9.929999999999996, @cutime=0.0, @utime=9.769999999999996>
-#<Benchmark::Tms:0x3f672204 @stime=0.19000000000000128, @label="", @cstime=0.0, @real=6.291801685001701, @total=11.370000000000008, @cutime=0.0, @utime=11.180000000000007>
+#<Benchmark::Tms:0x41fe8e5f @stime=0.08999999999999986, @label="", @cstime=0.0, @real=2.0469658999936655, @total=2.7400000000000055, @cutime=0.0, @utime=2.6500000000000057>
+#<Benchmark::Tms:0x6f1a80fb @stime=0.019999999999999574, @label="", @cstime=0.0, @real=2.1721777559723705, @total=2.219999999999988, @cutime=0.0, @utime=2.1999999999999886>
+#<Benchmark::Tms:0x6a0094c9 @stime=0.009999999999999787, @label="", @cstime=0.0, @real=1.8670665710233152, @total=1.8899999999999952, @cutime=0.0, @utime=1.8799999999999955>
 
 
 
@@ -123,99 +122,57 @@ While read_transaction single session
 =========================3. JRuby without Seabolt=========================
 
 
-neo4j-driver version: 1.7.2.beta.3
-Ruby version: 2.5.3
-ENV['SEABOLT_LIB'].size = 61
-==================================================
-for loop_count 10000
-While write_transaction multiple session
-#<Benchmark::Tms:0x4930539b @stime=1.34, @label="", @cstime=0.0, @real=7.793662035022862, @total=11.38, @cutime=0.0, @utime=10.040000000000001>
-#<Benchmark::Tms:0x6dcd5639 @stime=1.11, @label="", @cstime=0.0, @real=6.018477960024029, @total=5.229999999999998, @cutime=0.0, @utime=4.119999999999997>
-#<Benchmark::Tms:0x4f63e3c7 @stime=1.08, @label="", @cstime=0.0, @real=5.912654745974578, @total=3.0699999999999985, @cutime=0.0, @utime=1.9899999999999984>
-==================================================
-for loop_count 5
-While read_transaction multiple session
-#<Benchmark::Tms:0x2c708440 @stime=0.3799999999999999, @label="", @cstime=0.0, @real=7.112040446023457, @total=14.790000000000003, @cutime=0.0, @utime=14.410000000000004>
-#<Benchmark::Tms:0x77cb9cd1 @stime=0.21999999999999975, @label="", @cstime=0.0, @real=7.2358629470691085, @total=13.219999999999999, @cutime=0.0, @utime=13.0>
-#<Benchmark::Tms:0x6411d3c8 @stime=0.20000000000000018, @label="", @cstime=0.0, @real=7.393314365996048, @total=13.570000000000004, @cutime=0.0, @utime=13.370000000000005>
-==================================================
-for loop_count 10000
-While write_transaction single session
-#<Benchmark::Tms:0x26d820eb @stime=0.08000000000000007, @label="", @cstime=0.0, @real=0.22726924100425094, @total=0.8700000000000063, @cutime=0.0, @utime=0.7900000000000063>
-#<Benchmark::Tms:0x540a903b @stime=0.0699999999999994, @label="", @cstime=0.0, @real=0.18644889700226486, @total=0.2599999999999971, @cutime=0.0, @utime=0.18999999999999773>
-#<Benchmark::Tms:0x6c03fb16 @stime=0.07000000000000028, @label="", @cstime=0.0, @real=0.17811996897216886, @total=0.23000000000001108, @cutime=0.0, @utime=0.1600000000000108>
-==================================================
-for loop_count 5
-While read_transaction single session
-#<Benchmark::Tms:0x73ad7e90 @stime=0.17999999999999972, @label="", @cstime=0.0, @real=6.91150220297277, @total=12.720000000000006, @cutime=0.0, @utime=12.540000000000006>
-#<Benchmark::Tms:0x1cb37ee4 @stime=0.17999999999999972, @label="", @cstime=0.0, @real=7.651667002006434, @total=14.130000000000003, @cutime=0.0, @utime=13.950000000000003>
-#<Benchmark::Tms:0x51351f28 @stime=0.1800000000000006, @label="", @cstime=0.0, @real=7.115472389035858, @total=13.04, @cutime=0.0, @utime=12.86>
-==================================================
-for loop_count 50000
-While write_transaction multiple session
-#<Benchmark::Tms:0x58b67519 @stime=5.39, @label="", @cstime=0.0, @real=29.314958497998305, @total=14.790000000000006, @cutime=0.0, @utime=9.400000000000006>
-#<Benchmark::Tms:0x4beeb0e @stime=6.23, @label="", @cstime=0.0, @real=34.65685508889146, @total=17.180000000000003, @cutime=0.0, @utime=10.950000000000003>
-#<Benchmark::Tms:0x7123be6c @stime=6.210000000000001, @label="", @cstime=0.0, @real=34.75939955597278, @total=17.279999999999994, @cutime=0.0, @utime=11.069999999999993>
-==================================================
-for loop_count 5
-While read_transaction multiple session
-#<Benchmark::Tms:0x31f20c9f @stime=0.21999999999999886, @label="", @cstime=0.0, @real=8.589310178998858, @total=15.889999999999986, @cutime=0.0, @utime=15.669999999999987>
-#<Benchmark::Tms:0x7e736350 @stime=0.370000000000001, @label="", @cstime=0.0, @real=9.45424923102837, @total=17.439999999999994, @cutime=0.0, @utime=17.069999999999993>
-#<Benchmark::Tms:0x41bf79da @stime=0.4800000000000004, @label="", @cstime=0.0, @real=10.078052066033706, @total=18.48999999999999, @cutime=0.0, @utime=18.00999999999999>
-==================================================
-for loop_count 50000
-While write_transaction single session
-#<Benchmark::Tms:0xfca387 @stime=0.38000000000000256, @label="", @cstime=0.0, @real=1.0109328399412334, @total=1.250000000000007, @cutime=0.0, @utime=0.8700000000000045>
-#<Benchmark::Tms:0x5e746d37 @stime=0.39000000000000057, @label="", @cstime=0.0, @real=1.0625888759968802, @total=1.4299999999999926, @cutime=0.0, @utime=1.039999999999992>
-#<Benchmark::Tms:0x25e49cb2 @stime=0.41999999999999815, @label="", @cstime=0.0, @real=0.9785069740610197, @total=1.5099999999999731, @cutime=0.0, @utime=1.089999999999975>
-==================================================
-for loop_count 5
-While read_transaction single session
-#<Benchmark::Tms:0x61dde151 @stime=0.41000000000000014, @label="", @cstime=0.0, @real=10.106293677003123, @total=19.069999999999997, @cutime=0.0, @utime=18.659999999999997>
-#<Benchmark::Tms:0x211febf3 @stime=0.28999999999999915, @label="", @cstime=0.0, @real=9.453848829958588, @total=17.410000000000004, @cutime=0.0, @utime=17.120000000000005>
-#<Benchmark::Tms:0x6bbe50c9 @stime=0.39000000000000057, @label="", @cstime=0.0, @real=10.113987567950971, @total=18.63000000000001, @cutime=0.0, @utime=18.24000000000001>
-
-
-
-
-
-
-=========================1'. MRI Ruby with Seabolt (old single run result (not 3 run result like the others))=========================
-
 neo4j-driver version: 0.1.4
-Ruby version: 2.6.3
-ENV['SEABOLT_LIB'].size = 61
+Ruby version: 2.5.3
+ENV['SEABOLT_LIB'].size = 0
 
 ==================================================
 for loop_count 10000
 While write_transaction multiple session
-#<Benchmark::Tms:0x00007f96a706c260 @label="", @real=11.326321000000462, @cstime=0.0, @cutime=0.0, @stime=0.902723, @utime=4.179386, @total=5.082109>
+#<Benchmark::Tms:0xc2db68f @stime=0.88, @label="", @cstime=0.0, @real=54.55582710308954, @total=15.840000000000002, @cutime=0.0, @utime=14.96>
+#<Benchmark::Tms:0x1af146 @stime=0.6199999999999999, @label="", @cstime=0.0, @real=52.10494363994803, @total=4.570000000000003, @cutime=0.0, @utime=3.950000000000003>
+#<Benchmark::Tms:0x62fe6067 @stime=0.6299999999999999, @label="", @cstime=0.0, @real=51.61877604201436, @total=4.780000000000006, @cutime=0.0, @utime=4.150000000000006>
 ==================================================
 for loop_count 5
 While read_transaction multiple session
-#<Benchmark::Tms:0x00007f96a71c7100 @label="", @real=33.127596999984235, @cstime=0.0, @cutime=0.0, @stime=0.06100400000000006, @utime=33.049499, @total=33.110502999999994>
+#<Benchmark::Tms:0x2dbf4cbd @stime=0.020000000000000018, @label="", @cstime=0.0, @real=0.795828909962438, @total=2.239999999999999, @cutime=0.0, @utime=2.219999999999999>
+#<Benchmark::Tms:0x7e3060d8 @stime=0.010000000000000231, @label="", @cstime=0.0, @real=0.4460455379448831, @total=0.5499999999999994, @cutime=0.0, @utime=0.5399999999999991>
+#<Benchmark::Tms:0x62fad19 @stime=0.009999999999999787, @label="", @cstime=0.0, @real=0.4372758420649916, @total=0.47999999999999865, @cutime=0.0, @utime=0.46999999999999886>
 ==================================================
 for loop_count 10000
 While write_transaction single session
-#<Benchmark::Tms:0x00007f96671a29a8 @label="", @real=2.9771940000355244, @cstime=0.0, @cutime=0.0, @stime=0.20960800000000002, @utime=1.6154500000000027, @total=1.8250580000000027>
+#<Benchmark::Tms:0x38f57b3d @stime=0.25, @label="", @cstime=0.0, @real=2.2924832900753245, @total=2.440000000000005, @cutime=0.0, @utime=2.190000000000005>
+#<Benchmark::Tms:0x34a1d21f @stime=0.2200000000000002, @label="", @cstime=0.0, @real=1.9970868839882314, @total=1.5300000000000025, @cutime=0.0, @utime=1.3100000000000023>
+#<Benchmark::Tms:0x24bdb479 @stime=0.2799999999999998, @label="", @cstime=0.0, @real=1.8529318269575015, @total=1.819999999999999, @cutime=0.0, @utime=1.5399999999999991>
 ==================================================
 for loop_count 5
 While read_transaction single session
-#<Benchmark::Tms:0x00007f96979b79d8 @label="", @real=33.466255999868736, @cstime=0.0, @cutime=0.0, @stime=0.13945000000000007, @utime=33.29979599999999, @total=33.439246>
-
+#<Benchmark::Tms:0x419a20a6 @stime=0.010000000000000231, @label="", @cstime=0.0, @real=0.468579827924259, @total=0.7400000000000042, @cutime=0.0, @utime=0.730000000000004>
+#<Benchmark::Tms:0x10fde30a @stime=0.08000000000000007, @label="", @cstime=0.0, @real=0.4757598970318213, @total=0.7999999999999989, @cutime=0.0, @utime=0.7199999999999989>
+#<Benchmark::Tms:0x346939bf @stime=0.009999999999999787, @label="", @cstime=0.0, @real=0.4600594890071079, @total=0.7100000000000026, @cutime=0.0, @utime=0.7000000000000028>
 ==================================================
 for loop_count 50000
 While write_transaction multiple session
-#<Benchmark::Tms:0x00007f96a7a17a30 @label="", @real=43.032587999943644, @cstime=0.0, @cutime=0.0, @stime=3.542622, @utime=15.543594999999996, @total=19.086216999999998>
+#<Benchmark::Tms:0x654b72c0 @stime=2.79, @label="", @cstime=0.0, @real=242.33857750310563, @total=18.049999999999997, @cutime=0.0, @utime=15.259999999999998>
+#<Benchmark::Tms:0x4c2869a9 @stime=3.250000000000001, @label="", @cstime=0.0, @real=262.76006326894276, @total=22.83, @cutime=0.0, @utime=19.58>
+#<Benchmark::Tms:0x7479b626 @stime=3.0999999999999996, @label="", @cstime=0.0, @real=258.6624223178951, @total=21.03000000000001, @cutime=0.0, @utime=17.930000000000007>
 ==================================================
 for loop_count 5
 While read_transaction multiple session
-#<Benchmark::Tms:0x00007f9680ce9d70 @label="", @real=35.889772000024095, @cstime=0.0, @cutime=0.0, @stime=0.10345199999999988, @utime=35.764476, @total=35.867928>
+#<Benchmark::Tms:0x5ff2b8ca @stime=0.009999999999999787, @label="", @cstime=0.0, @real=1.9894269490614533, @total=2.01, @cutime=0.0, @utime=2.0>
+#<Benchmark::Tms:0x59e43e8c @stime=0.009999999999999787, @label="", @cstime=0.0, @real=1.9905210389988497, @total=2.01, @cutime=0.0, @utime=2.0>
+#<Benchmark::Tms:0x3f049056 @stime=0.019999999999999574, @label="", @cstime=0.0, @real=1.9971727710217237, @total=2.0300000000000047, @cutime=0.0, @utime=2.010000000000005>
 ==================================================
 for loop_count 50000
 While write_transaction single session
-#<Benchmark::Tms:0x00007f96902e3f50 @label="", @real=14.379599999869242, @cstime=0.0, @cutime=0.0, @stime=0.9944410000000001, @utime=7.956193000000013, @total=8.950634000000013>
+#<Benchmark::Tms:0x69228e85 @stime=1.0700000000000003, @label="", @cstime=0.0, @real=9.901112189982086, @total=9.800000000000004, @cutime=0.0, @utime=8.730000000000004>
+#<Benchmark::Tms:0x18acfe88 @stime=0.9900000000000002, @label="", @cstime=0.0, @real=10.764063760987483, @total=13.830000000000004, @cutime=0.0, @utime=12.840000000000003>
+#<Benchmark::Tms:0x70c0a3d5 @stime=0.8000000000000007, @label="", @cstime=0.0, @real=9.26595702697523, @total=7.550000000000001, @cutime=0.0, @utime=6.75>
 ==================================================
 for loop_count 5
 While read_transaction single session
-#<Benchmark::Tms:0x00007f9683530860 @label="", @real=41.93546700011939, @cstime=0.0, @cutime=0.0, @stime=0.2567580000000005, @utime=41.649130000000014, @total=41.90588800000001>
+#<Benchmark::Tms:0x6438a7fe @stime=0.08000000000000007, @label="", @cstime=0.0, @real=2.2118826949736103, @total=3.1400000000000023, @cutime=0.0, @utime=3.0600000000000023>
+#<Benchmark::Tms:0x615e3f51 @stime=0.009999999999999787, @label="", @cstime=0.0, @real=1.9700082439230755, @total=2.020000000000019, @cutime=0.0, @utime=2.0100000000000193>
+#<Benchmark::Tms:0x5412bfea @stime=0.009999999999999787, @label="", @cstime=0.0, @real=1.935821480001323, @total=1.9499999999999975, @cutime=0.0, @utime=1.9399999999999977>
+
+
